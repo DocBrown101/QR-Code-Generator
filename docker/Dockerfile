@@ -5,8 +5,8 @@ COPY package.json ./
 COPY package-lock.json ./
 COPY index.html ./
 COPY vite.config.js ./
-COPY ./public ./public
-COPY ./src ./src
+COPY ../public ./public
+COPY ../src ./src
 RUN npm install
 RUN npm run build
 
